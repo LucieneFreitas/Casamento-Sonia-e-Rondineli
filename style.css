@@ -5,11 +5,11 @@
 
 :root {
   /* CORES PRINCIPAIS: altere aqui para mudar a identidade visual */
-  --color-primary: #d85b7f;
-  --color-primary-dark: #b33c61;
-  --color-secondary: #f7c9d6;
-  --color-bg: #fff8f8;
-  --color-soft: #fff0f3;
+  --color-primary: #8B1E2D;
+  --color-primary-dark: #66131F;
+  --color-secondary: #D9B8BD;
+  --color-bg: #F8F5F2;
+  --color-soft: #F3ECE7;
   --color-text: #2d2528;
   --color-muted: #75676c;
   --color-white: #ffffff;
@@ -244,7 +244,7 @@ textarea {
 .footer-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, rgba(37, 19, 25, 0.7), rgba(216, 91, 127, 0.35));
+  background: linear-gradient(135deg, rgba(37, 19, 25, 0.7), rgba(216, 91, 127, 0.25));
 }
 
 .hero-content {
