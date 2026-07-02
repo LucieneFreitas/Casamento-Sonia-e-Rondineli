@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Site de casamento responsivo, moderno e elegante." />
+  <title>Sonia & Rondineli | Nosso Casamento</title>
+
+  <!--
+    COMO EDITAR:
+    - Textos: altere diretamente as seções abaixo.
+    - Imagens: substitua os arquivos dentro da pasta /assets mantendo os nomes
+      ou troque o caminho no atributo src / style="--bg-image".
+    - Cores: edite as variáveis no início do arquivo style.css.
+  -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body id="topo">
+  <!-- Preloader: pode remover esta div se não quiser animação inicial -->
+  <div class="preloader" aria-label="Carregando site">
+    <span></span>
+    <span></span>
+  </div>
+
+  <header class="site-header" id="topo">
+    <div class="container header-content">
+      <!-- Logo / nomes do casal -->
+      <a href="#home" class="logo" aria-label="Ir para o início">Sonia <span>&</span> Rondineli</a>
+
+      <p class="header-date">Sexta-feira, 07 de Agosto de 2026</p>
+
+      <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
+    <nav class="main-nav" aria-label="Menu principal">
+      <div class="container">
+        <ul>
+          <li><a href="#home">Início</a></li>
+          <li><a href="#dia">O Grande Dia</a></li>
+          <li><a href="#historia">Nossa História</a></li>
+          <li><a href="#eventos">Eventos</a></li>
+          <li><a href="#galeria">Galeria</a></li>
+          <li><a href="#rsvp">RSVP</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO: troque a imagem em --bg-image ou substitua /assets/sonia01.jpg -->
+    <section class="hero section-observer" id="home" style="--bg-image: url('assets/sonia01.jpg')">
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        
+        <h1>Vamos nos casar</h1>
+        <p class="hero-subtitle">Com muita alegria, convidamos você para celebrar esse momento especial conosco.</p>
+
+        <div class="couple-cards" aria-label="Apresentação do casal">
+          <article class="couple-card">
+            <!-- Imagem do noivo/noiva: substitua assets/sonia02.png -->
+            <img src="assets/sonia02.png" alt="Foto de Sonia" />
+            <div>
+              <h2>Sonia</h2>
+              <p>Servidora pública da Prefeitura, dedicada, gentil e apaixonada por fazer a diferença na vida das pessoas. Ama flores, cafés tranquilos e acredita que o amor está presente nos pequenos detalhes do dia a dia.</p>
+              <div class="social-links" aria-label="Redes sociais de Ana">
+                <a href="#" aria-label="Instagram Ana">◎</a>
+                <a href="#" aria-label="Facebook Ana">f</a>
+                <a href="#" aria-label="Twitter Ana">x</a>
+              </div>
+            </div>
+          </article>
+
+          <div class="heart-badge" aria-hidden="true">♥</div>
+
+          <article class="couple-card reverse">
+            <!-- Imagem do noivo/noiva: substitua assets/nelio01.png -->
+            <img src="assets/nelio01.png" alt="Foto de Nelio" />
+            <div>
+              <h2>Rondineli</h2>
+              <p>Mecânico de motos, movido pela paixão por duas rodas e pela dedicação ao que faz. Entre motores e estradas, encontrou seu grande amor, com quem deseja construir uma vida repleta de companheirismo, felicidade e momentos inesquecíveis.</p>
+              <div class="social-links" aria-label="Redes sociais de Miguel">
+                <a href="#" aria-label="Instagram Miguel">◎</a>
+                <a href="#" aria-label="Facebook Miguel">f</a>
+                <a href="#" aria-label="Twitter Miguel">x</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- DATA E CONTADOR: altere a data no atributo data-wedding-date -->
+    <section class="wedding-day section-padding section-observer" id="dia" data-wedding-date="2026-08-01T19:00:00">
+      <div class="container narrow">
+        <div class="section-title">
+          <span>O grande dia</span>
+          <h2>Sexta-feira, 07 de <strong>Agosto</strong> de 2026</h2>
+        </div>
+
+        <div class="countdown" id="countdown" aria-label="Contagem regressiva para o casamento">
+          <div><strong id="days">00</strong><span>Dias</span></div>
+          <div><strong id="hours">00</strong><span>Horas</span></div>
+          <div><strong id="minutes">00</strong><span>Minutos</span></div>
+          <div><strong id="seconds">00</strong><span>Segundos</span></div>
+        </div>
+
+        <p class="section-description">Será um dia de amor, família, amigos e memórias lindas. Prepare o look, o sorriso e venha celebrar essa nova fase com a gente.</p>
+      </div>
+    </section>
+
+    <!-- HISTÓRIA -->
+    <section class="story section-padding soft-bg section-observer" id="historia">
+      <div class="container">
+        <div class="section-title">
+          <span>Nossa história</span>
+          <h2>Como tudo começou</h2>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item">
+            <img src="assets/sonia05.jpeg" alt="Primeiro encontro do casal" />
+            <div class="timeline-date"><strong>2026</strong><span>Set</span></div>
+            <div class="timeline-text">
+              <h3>Tudo começou com uma foto</h3>
+              <p>Tudo começou com um simples elogio a uma foto. O que parecia ser apenas uma mensagem despretensiosa rapidamente se transformou em longas conversas, muitas risadas e uma conexão que crescia a cada dia. Sem que percebêssemos, aquele primeiro contato já era o início da linda história que hoje nos traz até aqui.</p>
+            </div>
+          </article>
+
+          <article class="timeline-item reverse">
+            <img src="assets/sonia06.jpg" alt="Primeiro encontro" />
+            <div class="timeline-date"><strong>2026</strong><span>Nov</span></div>
+            <div class="timeline-text">
+              <h3>O nosso primeiro encontro</h3>
+              <p>Depois de tantas conversas, chegou o dia de nos encontrarmos pela primeira vez. A ansiedade deu lugar aos sorrisos, aos abraços e à certeza de que a conexão que nasceu pelas mensagens era ainda mais especial pessoalmente. Foi nesse momento que percebemos que nossa história estava apenas começando.</p>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <img src="assets/sonia04.jpg" alt="Pedido de casamento" />
+            <div class="timeline-date"><strong>2026</strong><span>Dez</span></div>
+            <div class="timeline-text">
+              <h3>O pedido</h3>
+              <p>Com o coração acelerado e olhos brilhando, dissemos sim para uma vida inteira de parceria, amor e novas histórias.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- EVENTOS: altere horários, endereços e links do Google Maps -->
+    <section class="events section-padding section-observer" id="eventos">
+    <div class="container">
+
+        <div class="section-title">
+            <span>Programação</span>
+            <h2>Eventos do casamento</h2>
+            <p>
+                Nosso grande dia acontecerá em um só lugar.
+                Confira os horários e salve o endereço para celebrar conosco.
+            </p>
+        </div>
+
+        <div class="event-grid">
+
+            <article class="event-card">
+
+                <img
+                    src="assets/local-casamento.webp"
+                    alt="Local da cerimônia e recepção">
+
+                <div class="event-info">
+
+                    <h3>Cerimônia e Recepção</h3>
+
+                    <p>📅 <strong>07 de Agosto de 2026</strong></p>
+
+                    <p>🕖 Cerimônia: 19h às 19h30</p>
+
+                    <p>🥂 Recepção: 19h30 às 23h</p>
+
+                    <p>
+                        📍 R. João Palma Moreira, 255 -
+                        Costeira, São José dos Pinhais - PR
+                    </p>
+
+                    <a
+    class="button"
+    href="https://www.google.com/maps/search/?api=1&query=AFPM+Sede+Campestre+Rua+Joao+Palma+Moreira+255+Costeira+Sao+Jose+dos+Pinhais+PR"
+    target="_blank"
+    rel="noopener">
+    Ver no mapa
+</a>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+</section>
+
+    <!-- GALERIA: substitua as imagens em assets/gallery/ -->
+    <section class="gallery section-padding soft-bg section-observer" id="galeria">
+      <div class="container">
+        <div class="section-title">
+          <span>Memórias</span>
+          <h2>Galeria</h2>
+        </div>
+
+        <div class="gallery-grid">
+          <button type="button" class="gallery-item"><img src="assets/gallery/casal01.jpg" alt="Foto do casal 1" /></button>
+          <button type="button" class="gallery-item"><img src="assets/gallery/casal02.jpg" alt="Foto do casal 2" /></button>
+          <button type="button" class="gallery-item"><img src="assets/gallery/casal03.jpg" alt="Foto do casal 3" /></button>
+          <button type="button" class="gallery-item"><img src="assets/gallery/casal04.jpeg" alt="Foto do casal 4" /></button>
+          <button type="button" class="gallery-item"><img src="assets/gallery/casal05.jpeg" alt="Foto do casal 5" /></button>
+          <button type="button" class="gallery-item"><img src="assets/gallery/casal06.jpg" alt="Foto do casal 6" /></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- RSVP: formulário front-end. Para envio real, conecte a um backend, Formspree, EmailJS ou API própria. -->
+    <section class="rsvp section-padding section-observer" id="rsvp">
+      <div class="container narrow">
+        <div class="section-title">
+          <h2>Confirme sua presença</h2>
+          <p>Preencha o formulário abaixo para nos ajudar na organização. Vai ser lindo ter você com a gente!</p>
+        </div>
+
+        <form
+    class="rsvp-form"
+    id="rsvpForm"
+    action="enviar.php"
+    method="POST">
+          <div class="form-grid">
+            <label>
+              Nome completo
+              <input type="text" name="name" placeholder="Seu nome" required />
+            </label>
+
+            <label>
+              E-mail
+              <input type="email" name="email" placeholder="seuemail@exemplo.com" required />
+            </label>
+
+            
+          </div>
+
+          <label>
+            Mensagem para o casal
+            <textarea name="message" rows="5" placeholder="Deixe uma mensagem carinhosa"></textarea>
+          </label>
+
+<button class="button button-center" type="submit">
+    Enviar confirmação
+</button>
+
+<p class="form-feedback" id="formFeedback" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER: troque a imagem em --bg-image ou substitua /assets/footer.jpg -->
+  <footer class="footer" style="--bg-image: url('assets/imagem.jpg')">
+    <div class="footer-overlay"></div>
+    <div class="container footer-content">
+      <h2>Obrigada!</h2>
+      <p>Com amor, Sonia & Rondineli</p>
+      <a href="#topo" class="back-top">Voltar ao topo ↑</a>
+    </div>
+  </footer>
+
+  <!-- Lightbox simples da galeria -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox-close" type="button" aria-label="Fechar imagem">×</button>
+    <img src="" alt="Imagem ampliada da galeria" />
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
