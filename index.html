@@ -48,7 +48,7 @@
           <li><a href="#historia">Nossa História</a></li>
           <li><a href="#eventos">Eventos</a></li>
           <li><a href="#galeria">Galeria</a></li>
-          <li><a href="#rsvp">RSVP</a></li>
+         
         </ul>
       </div>
     </nav>
@@ -227,57 +227,31 @@
       </div>
     </section>
 
-    <!-- RSVP: formulário front-end. Para envio real, conecte a um backend, Formspree, EmailJS ou API própria. -->
-    <section class="rsvp section-padding section-observer" id="rsvp">
-      <div class="container narrow">
-        <div class="section-title">
-          <h2>Confirme sua presença</h2>
-          <p>Preencha o formulário abaixo para nos ajudar na organização. Vai ser lindo ter você com a gente!</p>
-        </div>
 
-        <form
-    class="rsvp-form"
-    id="rsvpForm"
-    action="enviar.php"
-    method="POST">
-          <div class="form-grid">
-            <label>
-              Nome completo
-              <input type="text" name="name" placeholder="Seu nome" required />
-            </label>
-
-            <label>
-              E-mail
-              <input type="email" name="email" placeholder="seuemail@exemplo.com" required />
-            </label>
-
-            
-          </div>
-
-          <label>
-            Mensagem para o casal
-            <textarea name="message" rows="5" placeholder="Deixe uma mensagem carinhosa"></textarea>
-          </label>
-
-<button class="button button-center" type="submit">
-    Enviar confirmação
-</button>
-
-<p class="form-feedback" id="formFeedback" role="status"></p>
-        </form>
-      </div>
-    </section>
   </main>
 
   <!-- FOOTER: troque a imagem em --bg-image ou substitua /assets/footer.jpg -->
-  <footer class="footer" style="--bg-image: url('assets/imagem.jpg')">
-    <div class="footer-overlay"></div>
-    <div class="container footer-content">
-      <h2>Obrigada!</h2>
-      <p>Com amor, Sonia & Rondineli</p>
-      <a href="#topo" class="back-top">Voltar ao topo ↑</a>
-    </div>
-  </footer>
+<footer class="footer" style="--bg-image: url('assets/imagem.jpg')">
+  <div class="footer-overlay"></div>
+  <div class="container footer-content">
+    <h2>Obrigada!</h2>
+    <p>Com amor, Sonia & Rondineli</p>
+    <a href="#topo" class="back-top">Voltar ao topo ↑</a>
+
+    <!-- ============================================================
+         CRÉDITO DO DESENVOLVEDOR
+         Para editar: troque o nome e/ou o href do tel:
+    ============================================================== -->
+    <p class="dev-credit">
+      Site criado com 💛 por
+      <strong>Luciene Freitas</strong>
+      &nbsp;·&nbsp;
+      <a href="tel:+5521992935618">(21) 99293-5618</a>
+    </p>
+    <!-- /CRÉDITO DO DESENVOLVEDOR -->
+
+  </div>
+</footer>
 
   <!-- Lightbox simples da galeria -->
   <div class="lightbox" id="lightbox" aria-hidden="true">

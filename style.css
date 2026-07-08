@@ -881,6 +881,27 @@ textarea {
   font-size: 1.1rem;
 }
 
+/* Crédito da desenvolvedora — no footer */
+.dev-credit {
+  margin-top: 2rem;
+  font-size: 0.78rem;
+  opacity: 0.65;
+  letter-spacing: 0.06em;
+}
+.dev-credit strong {
+  font-weight: 500;
+  color: inherit;
+}
+.dev-credit a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: opacity 0.25s ease;
+}
+.dev-credit a:hover {
+  opacity: 1;
+}
+
 .back-top {
   position: relative;
   z-index: 2;
