@@ -2,6 +2,8 @@
 
 > Site do casamento de Sonia e Rondineli, celebrado em **07 de Agosto de 2026**.
 
+🔗 **Acesse o site:** https://lucienefreitas.github.io/Casamento-Sonia-e-Rondineli/
+
 ---
 
 ## ✨ Sobre o Projeto
