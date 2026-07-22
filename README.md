@@ -1,24 +1,13 @@
-# 💍 Wedding Site — Template Responsivo para Casamentos
+# 💍 Sonia & Rondineli — Site do Casamento
 
-> Site elegante, moderno e 100% personalizável para o dia mais especial da vida do casal.
+> Site do casamento de Sonia e Rondineli, celebrado em **07 de Agosto de 2026**.
 
 ---
 
 ## ✨ Sobre o Projeto
 
-Template de site para casamentos desenvolvido do zero em **HTML, CSS e JavaScript puro** — sem frameworks pesados, sem dependências externas, sem complicação.
-
-O foco foi entregar um produto **rápido, leve e fácil de editar**, com visual romântico e profissional que funciona perfeitamente em qualquer dispositivo.
-
----
-
-## 🖥️ Preview
-
-| Desktop | Tablet | Mobile |
-|--------|--------|--------|
-| ✅ Full layout | ✅ Adaptado | ✅ Menu hambúrguer |
-
-> 💡 *Imagens reais do casal são inseridas apenas após contratação.*
+Site desenvolvido em **HTML, CSS e JavaScript puro** — sem frameworks, sem dependências externas.
+Reúne a história do casal, contagem regressiva, informações da cerimônia e recepção, e uma galeria de fotos.
 
 ---
 
@@ -28,114 +17,101 @@ O foco foi entregar um produto **rápido, leve e fácil de editar**, com visual 
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
 
-- **HTML5 Semântico** — estrutura acessível e bem organizada
-- **CSS3 com variáveis** — paleta, fontes e espaçamentos centralizados (fácil de customizar)
-- **JavaScript Vanilla** — sem jQuery, sem Bootstrap, sem dependências
-- **Google Fonts** — tipografia elegante com `Cormorant Garamond` + `Jost`
-- **Responsivo Mobile-First** — funciona em qualquer tela, de 320px a 4K
+- **HTML5 Semântico** — estrutura em seções (`header`, `main`, `footer`)
+- **CSS3 com variáveis** — cores, fontes e espaçamentos centralizados em `:root`
+- **JavaScript Vanilla** — sem bibliotecas, todas as interações em `script.js`
+- **Google Fonts** — `Great Vibes` (títulos) + `Inter` (textos)
+- **Responsivo** — layout adaptado para desktop, tablet e mobile
 
 ---
 
-## 📦 O Que Está Incluído
+## 📦 Estrutura de Arquivos
 
 ```
-wedding-site/
-├── index.html          # Estrutura semântica completa
-├── style.css           # Estilos organizados por seção + variáveis
-├── script.js           # Todas as interações (contador, galeria, RSVP)
+casamento_sonia_rondineli/
+├── index.html          # Estrutura e conteúdo do site
+├── style.css            # Estilos por seção + variáveis de cor/fonte
+├── script.js            # Preloader, menu, contador, timeline, galeria/lightbox
 └── assets/
-    └── img/
-        ├── hero-bg.jpg       # Foto principal de fundo
-        ├── noivo.jpg         # Foto do noivo
-        ├── noiva.jpg         # Foto da noiva
-        ├── historia-*.jpg    # Fotos da linha do tempo
-        ├── cerimonia.jpg     # Foto do local da cerimônia
-        ├── festa.jpg         # Foto do local da festa
-        ├── footer-bg.jpg     # Fundo do rodapé
-        └── gallery/          # 9 fotos da galeria
+    ├── sonia01.jpg       # Foto de fundo do topo (hero)
+    ├── sonia02.png       # Foto de perfil da Sonia
+    ├── nelio01.png        # Foto de perfil do Rondineli
+    ├── sonia04.jpg, sonia05.jpeg, sonia06.jpg   # Fotos da linha do tempo
+    ├── salao.webp         # Foto do local da cerimônia
+    ├── local-casamento.webp  # Foto do local da recepção
+    ├── imagem.jpg           # Fundo do rodapé (adicionar este arquivo)
+    └── gallery/
+        └── casal01.jpg … casal06.jpg   # Fotos da galeria
 ```
 
 ---
 
-## 🎯 Funcionalidades
+## 🎯 Seções e Funcionalidades
 
-- [x] **Hero romântico** com foto de fundo em parallax e apresentação do casal
-- [x] **Contador regressivo** em tempo real até o grande dia
-- [x] **Nossa história** em linha do tempo interativa
-- [x] **Eventos do casamento** com link direto para o Google Maps
-- [x] **Galeria de fotos** com lightbox (amplia ao clicar, navegação por teclado)
-- [x] **Formulário de RSVP** com validação client-side
-- [x] **Menu mobile** com hambúrguer animado
-- [x] **Scroll suave** entre seções + indicador de seção ativa no menu
-- [x] **Botão "Voltar ao topo"** que aparece ao rolar a página
-- [x] **Acessibilidade** — navegação por teclado e foco visível em todos os elementos
-- [x] **Preloader** com animação enquanto a página carrega
-- [x] **Retina Ready** — imagens preparadas para telas de alta densidade
+- **Cabeçalho fixo** com menu de navegação e hambúrguer animado no mobile
+- **Hero** com foto de fundo, apresentação de Sonia e Rondineli e links de Instagram de cada um
+- **Contador regressivo** em tempo real até o casamento (controlado pelo atributo `data-wedding-date`)
+- **Nossa história** em linha do tempo com 3 marcos (primeiro contato, primeiro encontro e pedido)
+- **Eventos**, com dois cards separados:
+  - **Cerimônia** — Salão do Reino, R. João Melanski Filho, 505, Quissisana, São José dos Pinhais - PR
+  - **Recepção** — R. João Palma Moreira, 255, Costeira, São José dos Pinhais - PR
+  - Cada card tem botão "Ver no mapa" com link direto do Google Maps
+- **Galeria de fotos** com lightbox (amplia ao clicar, fecha com `Esc` ou clique fora)
+- **Coração pulsante** animado entre os cards do casal
+- **Animação de entrada** das seções ao rolar a página (scroll reveal)
+- **Rodapé** com crédito da desenvolvedora e contato direto pelo WhatsApp
 
 ---
 
-## 🎨 Personalização
+## 🎨 Configurações e Personalização
 
-Toda a identidade visual é controlada por **variáveis CSS** no topo do `style.css`:
+### Cores e fontes
+Definidas em variáveis CSS no topo do `style.css`:
 
 ```css
 :root {
-  --color-accent:    #B4674E;   /* cor principal — troque aqui */
-  --color-accent-2:  #7C8B6F;   /* cor de apoio */
-  --font-display:   'Cormorant Garamond', serif;  /* fonte dos títulos */
-  --font-body:      'Jost', sans-serif;            /* fonte dos textos */
+  --color-primary: #8B1E2D;       /* vinho — cor principal */
+  --color-primary-dark: #66131F;
+  --color-secondary: #D9B8BD;
+  --color-bg: #F8F5F2;
+  --color-text: #2d2528;
+
+  --font-title: 'Great Vibes', cursive;   /* títulos */
+  --font-body: 'Inter', system-ui, sans-serif;  /* textos */
 }
 ```
 
-Troque 5 linhas → novo visual completo. 🎯
+### Data do casamento
+O contador regressivo usa o atributo `data-wedding-date` na section `#dia`:
+
+```html
+<section class="wedding-day" id="dia" data-wedding-date="2026-08-07T19:00:00">
+```
+
+### Endereços e links do mapa
+Editados diretamente nos `event-card` da seção `#eventos`, no `href` do botão "Ver no mapa".
+
+### Fotos
+Substituindo os arquivos na pasta `assets/`, mantendo os mesmos nomes usados no `index.html`.
 
 ---
 
-## 📋 O Que Você Pode Personalizar
+## 📞 Contato
 
-| Elemento | Onde editar |
-|----------|-------------|
-| Nomes do casal | `index.html` — comentário marcado |
-| Data do casamento | `index.html` — atributo `data-date` no countdown |
-| Fotos | Pasta `assets/img/` — mesmos nomes de arquivo |
-| Cores e fontes | `style.css` — bloco `:root` no topo |
-| Textos das seções | `index.html` — comentários em cada seção |
-| Endereço no mapa | `index.html` — atributo `href` dos eventos |
-| Envio do RSVP | `script.js` — comentário indicando onde plugar backend |
-
----
-
-## 📱 Compatibilidade
-
-| Navegador | Suporte |
-|-----------|---------|
-| Chrome / Edge | ✅ Completo |
-| Firefox | ✅ Completo |
-| Safari (iOS/macOS) | ✅ Completo |
-| Samsung Internet | ✅ Completo |
+**(21) 99293-5618** — via WhatsApp (link no rodapé do site)
 
 ---
 
 ## 🚀 Como Rodar
 
-1. Faça o download dos arquivos
-2. Substitua as imagens placeholder pelas fotos reais do casal
-3. Edite os textos no `index.html`
-4. Abra o `index.html` no navegador
+1. Baixe os arquivos do projeto
+2. Abra o `index.html` diretamente no navegador
 
-> Não precisa de servidor, não precisa instalar nada. **Abre e já funciona.**
+> Não precisa de servidor nem instalação. **Abre e já funciona.**
 
 ---
 
-## 📞 Desenvolvido por
+## 👩‍💻 Desenvolvido por
 
-**Luciene Freitas** — Desenvolvedora Full-Stack & Especialista ServiceNow
-
-Transformo ideias em produtos digitais elegantes e funcionais.
-Desenvolvimento personalizado de sites, landing pages e sistemas web.
-
-📱 **(21) 99293-5618**
-
----
-
-> *"Código limpo, entrega no prazo e cliente feliz — esse é o meu padrão mínimo."* 🚀
+**Luciene Freitas**
+📱 [(21) 99293-5618](https://wa.me/5521992935618)

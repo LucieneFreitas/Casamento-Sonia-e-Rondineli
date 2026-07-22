@@ -1,7 +1,7 @@
 /* =====================================================
    OUR LOVE INSPIRED - JAVASCRIPT PURO
    Interações: preloader, menu mobile, nav ativa, contador,
-   galeria/lightbox, validação simples do RSVP e animações.
+   galeria/lightbox e animações.
    ===================================================== */
 
 const preloader = document.querySelector('.preloader');
@@ -9,8 +9,6 @@ const menuToggle = document.querySelector('.menu-toggle');
 const mainNav = document.querySelector('.main-nav');
 const navLinks = document.querySelectorAll('.main-nav a');
 const weddingSection = document.querySelector('.wedding-day');
-const form = document.querySelector('#rsvpForm');
-const feedback = document.querySelector('#formFeedback');
 const lightbox = document.querySelector('#lightbox');
 const lightboxImage = lightbox?.querySelector('img');
 const lightboxClose = lightbox?.querySelector('.lightbox-close');
@@ -145,22 +143,4 @@ lightbox?.addEventListener('click', (event) => {
 
 document.addEventListener('keydown', (event) => {
   if (event.key === 'Escape') closeLightbox();
-});
-
-// Validação simples do formulário RSVP
-form?.addEventListener('submit', (event) => {
-  event.preventDefault();
-
-  if (!form.checkValidity()) {
-    feedback.textContent = 'Ops! Preencha os campos obrigatórios para confirmar sua presença.';
-    form.reportValidity();
-    return;
-  }
-
-  const formData = new FormData(form);
-  const guestName = formData.get('name');
-
-  // Aqui você pode integrar com API, EmailJS, Formspree ou backend próprio.
-  feedback.textContent = `Presença confirmada, ${guestName}! Obrigada pelo carinho. 💕`;
-  form.reset();
 });

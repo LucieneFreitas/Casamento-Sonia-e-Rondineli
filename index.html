@@ -3,16 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Site de casamento responsivo, moderno e elegante." />
+  <meta name="description" content="Site do casamento de Sonia & Rondineli. Confira nossa história, data, local da cerimônia e recepção." />
   <title>Sonia & Rondineli | Nosso Casamento</title>
 
-  <!--
-    COMO EDITAR:
-    - Textos: altere diretamente as seções abaixo.
-    - Imagens: substitua os arquivos dentro da pasta /assets mantendo os nomes
-      ou troque o caminho no atributo src / style="--bg-image".
-    - Cores: edite as variáveis no início do arquivo style.css.
-  -->
+  
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -20,7 +14,7 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body id="topo">
-  <!-- Preloader: pode remover esta div se não quiser animação inicial -->
+  <!-- Preloader: div animação inicial -->
   <div class="preloader" aria-label="Carregando site">
     <span></span>
     <span></span>
@@ -55,7 +49,7 @@
   </header>
 
   <main>
-    <!-- HERO: troque a imagem em --bg-image ou substitua /assets/sonia01.jpg -->
+    <!-- HERO -->
     <section class="hero section-observer" id="home" style="--bg-image: url('assets/sonia01.jpg')">
       <div class="hero-overlay"></div>
       <div class="container hero-content">
@@ -65,15 +59,21 @@
 
         <div class="couple-cards" aria-label="Apresentação do casal">
           <article class="couple-card">
-            <!-- Imagem do noivo/noiva: substitua assets/sonia02.png -->
+            <!-- Imagem sonia02.png -->
             <img src="assets/sonia02.png" alt="Foto de Sonia" />
             <div>
               <h2>Sonia</h2>
               <p>Servidora pública da Prefeitura, dedicada, gentil e apaixonada por fazer a diferença na vida das pessoas. Ama flores, cafés tranquilos e acredita que o amor está presente nos pequenos detalhes do dia a dia.</p>
-              <div class="social-links" aria-label="Redes sociais de Ana">
-                <a href="#" aria-label="Instagram Ana">◎</a>
-                <a href="#" aria-label="Facebook Ana">f</a>
-                <a href="#" aria-label="Twitter Ana">x</a>
+              <div class="social-links" aria-label="Redes sociais de Sonia">
+                <a href="https://www.instagram.com/leviski._/" target="_blank" rel="noopener" aria-label="Instagram Sonia">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                  </svg>
+                </a>
+                
+                
               </div>
             </div>
           </article>
@@ -81,15 +81,21 @@
           <div class="heart-badge" aria-hidden="true">♥</div>
 
           <article class="couple-card reverse">
-            <!-- Imagem do noivo/noiva: substitua assets/nelio01.png -->
-            <img src="assets/nelio01.png" alt="Foto de Nelio" />
+            <!-- Imagem noivo nelio01.png -->
+            <img src="assets/nelio01.png" alt="Foto de Rondineli" />
             <div>
               <h2>Rondineli</h2>
               <p>Mecânico de motos, movido pela paixão por duas rodas e pela dedicação ao que faz. Entre motores e estradas, encontrou seu grande amor, com quem deseja construir uma vida repleta de companheirismo, felicidade e momentos inesquecíveis.</p>
-              <div class="social-links" aria-label="Redes sociais de Miguel">
-                <a href="#" aria-label="Instagram Miguel">◎</a>
-                <a href="#" aria-label="Facebook Miguel">f</a>
-                <a href="#" aria-label="Twitter Miguel">x</a>
+              <div class="social-links" aria-label="Redes sociais de Rondineli">
+                <a href="https://www.instagram.com/rondinelimoraesda/" target="_blank" rel="noopener" aria-label="Instagram Rondineli">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                  </svg>
+                </a>
+                
+                
               </div>
             </div>
           </article>
@@ -97,8 +103,8 @@
       </div>
     </section>
 
-    <!-- DATA E CONTADOR: altere a data no atributo data-wedding-date -->
-    <section class="wedding-day section-padding section-observer" id="dia" data-wedding-date="2026-08-01T19:00:00">
+    <!-- DATA E CONTADOR -->
+    <section class="wedding-day section-padding section-observer" id="dia" data-wedding-date="2026-08-07T19:00:00">
       <div class="container narrow">
         <div class="section-title">
           <span>O grande dia</span>
@@ -155,7 +161,7 @@
       </div>
     </section>
 
-    <!-- EVENTOS: altere horários, endereços e links do Google Maps -->
+    <!-- EVENTOS: horários, endereços e links do Google Maps -->
     <section class="events section-padding section-observer" id="eventos">
     <div class="container">
 
@@ -163,8 +169,8 @@
             <span>Programação</span>
             <h2>Eventos do casamento</h2>
             <p>
-                Nosso grande dia acontecerá em um só lugar.
-                Confira os horários e salve o endereço para celebrar conosco.
+                Nosso grande dia terá dois momentos especiais, em locais diferentes.
+                Confira os horários e endereços de cada um para celebrar conosco.
             </p>
         </div>
 
@@ -173,18 +179,47 @@
             <article class="event-card">
 
                 <img
-                    src="assets/local-casamento.webp"
-                    alt="Local da cerimônia e recepção">
+                    src="assets/salao.webp"
+                    alt="Local da cerimônia">
 
                 <div class="event-info">
 
-                    <h3>Cerimônia e Recepção</h3>
+                    <h3>Cerimônia</h3>
 
                     <p>📅 <strong>07 de Agosto de 2026</strong></p>
 
                     <p>🕖 Cerimônia: 19h às 19h30</p>
 
-                    <p>🥂 Recepção: 19h30 às 23h</p>
+                    <p>
+                        📍 R. João Melanski Filho, 505 -
+                        Quissisana, São José dos Pinhais - PR, 83085-160
+                    </p>
+
+                    <a
+    class="button"
+    href="https://www.google.com/maps/place/SAL%C3%83O+DO+REINO+DAS+TESTEMUNHAS+DE+JEOVA/@-25.5558456,-49.1538668,17z/data=!3m1!4b1!4m6!3m5!1s0x94dcf7000d8b24e1:0x637d2440557d69b1!8m2!3d-25.5558456!4d-49.1538668!16s%2Fg%2F11lcytxlm4?entry=ttu&g_ep=EgoyMDI2MDcxOS4wIKXMDSoASAFQAw%3D%3D"
+    target="_blank"
+    rel="noopener">
+    Ver no mapa
+</a>
+
+                </div>
+
+            </article>
+
+            <article class="event-card">
+
+                <img
+                    src="assets/local-casamento.webp"
+                    alt="Local da recepção">
+
+                <div class="event-info">
+
+                    <h3>Recepção</h3>
+
+                    <p>📅 <strong>07 de Agosto de 2026</strong></p>
+
+                    <p>🥂 Recepção: 19h50 às 23h</p>
 
                     <p>
                         📍 R. João Palma Moreira, 255 -
@@ -208,7 +243,7 @@
     </div>
 </section>
 
-    <!-- GALERIA: substitua as imagens em assets/gallery/ -->
+    <!-- GALERIA -->
     <section class="gallery section-padding soft-bg section-observer" id="galeria">
       <div class="container">
         <div class="section-title">
@@ -230,7 +265,7 @@
 
   </main>
 
-  <!-- FOOTER: troque a imagem em --bg-image ou substitua /assets/footer.jpg -->
+  <!-- FOOTER -->
 <footer class="footer" style="--bg-image: url('assets/imagem.jpg')">
   <div class="footer-overlay"></div>
   <div class="container footer-content">
@@ -239,14 +274,13 @@
     <a href="#topo" class="back-top">Voltar ao topo ↑</a>
 
     <!-- ============================================================
-         CRÉDITO DO DESENVOLVEDOR
-         Para editar: troque o nome e/ou o href do tel:
+         CRÉDITO DO DESENVOLVEDOR 
     ============================================================== -->
     <p class="dev-credit">
       Site criado com 💛 por
       <strong>Luciene Freitas</strong>
       &nbsp;·&nbsp;
-      <a href="tel:+5521992935618">(21) 99293-5618</a>
+      <a href="https://wa.me/5521992935618" target="_blank" rel="noopener">(21) 99293-5618</a>
     </p>
     <!-- /CRÉDITO DO DESENVOLVEDOR -->
 
